@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import numpy as np
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 from tensorflow import keras
 import cv2
 import base64
